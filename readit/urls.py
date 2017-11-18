@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 
-from books.views import AuthorDetail, AuthorList, BookDetail, list_books
+from books.views import AuthorDetail, AuthorList, BookDetail, list_books, review_books, review_book
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -25,6 +25,8 @@ urlpatterns = [
     url(r'^authors/$', AuthorList.as_view(), name="authors"),
     url(r'^book/(?P<pk>[-\w]+)/$', BookDetail.as_view(), name="book-detail"),
     url(r'^author/(?P<pk>[-\w]+)/$', AuthorDetail.as_view(), name="author-detail"),
+    url(r'^review/$', review_books, name='review-books'),
+    url(r'^review/(?P<pk>[-\w]+)/$', review_book, name='review-book'),
 ]
 
 if 'debug_toolbar' in settings.INSTALLED_APPS:
