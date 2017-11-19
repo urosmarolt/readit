@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
-
+from django.contrib.auth.decorators import login_required
 from books.views import AuthorDetail, AuthorList, BookDetail, list_books, ReviewList, review_book, CreateAuthor
 
 urlpatterns = [
@@ -25,8 +25,8 @@ urlpatterns = [
     url(r'^authors/$', AuthorList.as_view(), name="authors"),
     url(r'^book/(?P<pk>[-\w]+)/$', BookDetail.as_view(), name="book-detail"),
     url(r'^authors/add/$', CreateAuthor.as_view(), name="add-author"),
-    url(r'^authors/(?P<pk>[-\w]+)/$', AuthorDetail.as_view(), name="author-detail"),
-    url(r'^review/$', ReviewList.as_view(), name='review-books'),
+    url(r'^authors/(?P<pk>[-\w]+)/$', login_required(AuthorDetail.as_view()), name="author-detail"),
+    url(r'^review/$', login_required(ReviewList.as_view()), name='review-books'),
     url(r'^review/(?P<pk>[-\w]+)/$', review_book, name='review-book'),
 ]
 

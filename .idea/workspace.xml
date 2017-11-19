@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="849eec9d-89d4-46dd-b79f-7d7d6185a030" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/admin.py" afterPath="$PROJECT_DIR$/books/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/forms.py" afterPath="$PROJECT_DIR$/books/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/models.py" afterPath="$PROJECT_DIR$/books/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/templates/author.html" afterPath="$PROJECT_DIR$/books/templates/author.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/templates/book-detail.html" afterPath="$PROJECT_DIR$/books/templates/book-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/templates/list-to-review.html" afterPath="$PROJECT_DIR$/books/templates/list-to-review.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books/views.py" afterPath="$PROJECT_DIR$/books/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readit/templates/base.html" afterPath="$PROJECT_DIR$/readit/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readit/urls.py" afterPath="$PROJECT_DIR$/readit/urls.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +28,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readit/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="67" lean-forward="false" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+            <state relative-caret-position="420">
+              <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
               <folding>
                 <element signature="e#640#681#0" expanded="true" />
               </folding>
@@ -43,13 +37,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/books/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="85" column="43" lean-forward="false" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
+            <state relative-caret-position="175">
+              <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#57#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/readit/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -150,8 +144,6 @@
         <option value="$PROJECT_DIR$/books/templates/list.html" />
         <option value="$PROJECT_DIR$/books/templates/authors.html" />
         <option value="$PROJECT_DIR$/readit/settings.py" />
-        <option value="$PROJECT_DIR$/readit/templates/base.html" />
-        <option value="$PROJECT_DIR$/readit/urls.py" />
         <option value="$PROJECT_DIR$/books/templates/form-snippets.html" />
         <option value="$PROJECT_DIR$/books/templates/review-book.html" />
         <option value="$PROJECT_DIR$/books/templates/create-author.html" />
@@ -162,11 +154,13 @@
         <option value="$PROJECT_DIR$/books/forms.py" />
         <option value="$PROJECT_DIR$/books/templates/list-to-review.html" />
         <option value="$PROJECT_DIR$/books/views.py" />
+        <option value="$PROJECT_DIR$/readit/urls.py" />
+        <option value="$PROJECT_DIR$/readit/templates/base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="718" />
+    <option name="x" value="657" />
     <option name="y" value="23" />
     <option name="width" value="1394" />
     <option name="height" value="877" />
@@ -253,7 +247,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="718" y="23" width="1394" height="877" extended-state="0" />
+    <frame x="657" y="23" width="1394" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14131995" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -323,16 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readit/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="67" lean-forward="false" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
-          <folding>
-            <element signature="e#640#681#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/books/templates/form-snippets.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1455">
@@ -361,14 +345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readit/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -419,11 +395,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/books/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="85" column="43" lean-forward="false" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
+        <state relative-caret-position="175">
+          <caret line="75" column="7" lean-forward="true" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readit/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="58" lean-forward="false" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+          <folding>
+            <element signature="e#640#681#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readit/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+          <folding />
         </state>
       </provider>
     </entry>
