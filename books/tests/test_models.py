@@ -2,7 +2,7 @@ from django.test import TestCase
 from books.models import Book
 from books.factories import AuthorFactory
 
-# Create your tests here.
+# Create your model tests here.
 class BookTest(TestCase):
     def setUp(self):
         self.author1 = AuthorFactory(name='Author 1')
