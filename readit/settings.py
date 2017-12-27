@@ -15,17 +15,21 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+DJANGO_MODE = os.getenv('DJANGO_MODE', "Production").lower()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'p4kwdbox!=yfs8x6ucar7)hcwt2)ck94$5#+8$zkswj-#i$8ny'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if DJANGO_MODE == 'local':
+    DEBUG = True
+else:
+    DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
 
 INTERNAL_IPS = ('127.0.0.1',)
 
@@ -39,9 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'debug_toolbar',
     'books',
 ]
+
+if DJANGO_MODE == 'local':
+    INSTALLED_APPS += (
+        'debug_toolbar',
+    )
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
